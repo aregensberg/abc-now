@@ -1,0 +1,16 @@
+
+h1{
+	text-align: center;
+	margin: 0 auto 2rem;
+	font-style: italic;
+	color: blueviolet;
+}
+body{
+	Padding: 2em 2em 2em 3em;
+}
+
+img {
+	display: block;
+	Height: 20em;
+	border-color: teal;
+}

@@ -2,8 +2,7 @@
 h1{
 	text-align: center;
 	margin: 0 auto 2rem;
-	font-style: italic;
-	color: blueviolet;
+	color: rebeccapurple;
 }
 body{
 	Padding: 2em 3em;
@@ -12,6 +11,8 @@ body{
 
 img {
 	display: block;
-	Height: 20em;
-	border-color: teal;
+	Height: 30em;
+	border:solid;
+	border-color: mediumpurple;
+	padding: 1em 1em;
 }

@@ -4,12 +4,13 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 	<title>ABC NOW</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
+	<link rel='customstyle' href="style.css"/>
 </head>
 <body>
 <!--nav bar-->
 <div class="container-fluid">
-<nav class="navbar navbar-expand-md navbar-dark" style="background-color: #a688dc">
+<nav class="navbar navbar-expand-md navbar-dark">
 	<a class="navbar-brand font-weight-bold "></a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
@@ -39,12 +40,79 @@
 	<span class="border border-light"></span>
 		<h3>Welcome:</h3>
 			<p> Learning the ABC's is the goal and this site will help your child learn all 26 letters in an easy and fun way. Each letter box will provide an image and word making the letters relatable to images and words they have probably already heard. Children are like little sponges and with patience, practice and repetition they can learn the alphabet and work on speech development.</p>
-
 </div>
 
+<!--ABC Board-->
+<main class='container'>
+<div class="row m-2 p-2">
+	<div class="col-sm-2">
+		<div class="card">
+			<div class="card-body">
+				<p class="card-text text-center">Aa</p>
+					<a class="btn btn-light" data-toggle="collapse" href="#collapseA" role="button" aria-expanded="false" aria-controls="collapseExample">Click</a>
+				<div class="collapse" id="collapseA">
+					<div class="card card-body ">
+						<p class='card-text'>Apple</p>
+						<img src='images/a-for-apple.jpg' alt='Apples'/>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		<div class="col-sm-2">
+			<div class="card">
+				<div class="card-body">
+					<p class="card-text text-center">Bb</p>
+					<a class="btn btn-light" data-toggle="collapse" href="#collapseB" role="button" aria-expanded="false" aria-controls="collapseExample">Click</a>
+					<div class="collapse" id="collapseB">
+						<div class="card card-body ">
+							<p class='card-text'>Balloon</p>
+							<img src='images/b-for-balloon.jpg' alt='Hot Air Balloon'/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+<!-- Activities-->
+<section>
+</section>
 
+<!--contact-->
+<br>
+<br>
+<br>
 
+<section>
+	<div class="container">
+		<div class="form-wrapper">
+			<h2>Contact</h2>
+			<form>
+				<div>
+					<label for="name">Name</label>
+					<input type="text" name="name" id="name"/>
+				</div>
+				<div>
+					<label for="emailEmail">Email</label>
+					<input type="email" name="email" id="email"/>
+				</div>
+				<div>
+					<label for="message">Message</label>
+					<textarea name="message" id="message" cols="30" rows="10" maxlength="1000" placeholder="1000 characters max"></textarea>
+				</div>
+				<button type="submit">Send!</button>
+			</form>
+		</div>
+	</div>
+</section>
 
+<!--footer-->
+<footer>
+	<div class="container">
+		<h4>Now you know your ABC's </h4>
+	</div>
+</footer>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

@@ -16,8 +16,9 @@
 }
  */
 
-body > main{
+body > main.container{
 	background-image: url(../public_html/images/chalkboard.jpg);
+	background-repeat: repeat;
 	background-size: cover;
 }
 
@@ -36,7 +37,7 @@ label, input, textarea{
 }
 
 footer{
-	background-color: #d3badb;
+	background-color: #d3badb!important;
 	color: whitesmoke;
 }
 

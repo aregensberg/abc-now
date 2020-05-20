@@ -9,12 +9,11 @@
 .nav{
 	background-color:#d3badb!important;
 }
-
-/*section#title{
-	background: url(images/chalk.jpg) no-repeat center;
+section.title {
+	background: url(../public_html/images/chalk.jpg) no-repeat center;
 	background-size: cover;
 }
- */
+
 
 body > main.container{
 	background-image: url(../public_html/images/chalkboard.jpg);

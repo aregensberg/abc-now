@@ -1,11 +1,23 @@
-.nav{
-	background-color:#d3badb!important; ;
+/* global css*/
+.card-text{
+	font-family: "Comic Sans MS";
 }
 
-body > section{
- background-image: image("images/chalk.jpg");
-	background-position: center;
-	background-repeat: no-repeat;
+
+/* **********************************************************************/
+
+.nav{
+	background-color:#d3badb!important;
+}
+
+/*section#title{
+	background: url(images/chalk.jpg) no-repeat center;
+	background-size: cover;
+}
+ */
+
+body > main{
+	background-image: url(../public_html/images/chalkboard.jpg);
 	background-size: cover;
 }
 

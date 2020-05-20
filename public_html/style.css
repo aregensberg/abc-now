@@ -1,8 +1,16 @@
-
+.nav{
+	background-color:#d3badb!important; ;
+}
+body > section{
+ background-image: image("images/chalk.jpg");
+	background-position: center;
+	background-size: cover;
+}
 
 .collapse{
 	display: inline-block;
 }
+
 form {
 	display: inline-block;
 	padding: 2em;
@@ -14,7 +22,7 @@ label, input, textarea{
 }
 
 footer{
-	background-color: mediumpurple;
+	background-color: #d3badb;
 	color: whitesmoke;
 }
 

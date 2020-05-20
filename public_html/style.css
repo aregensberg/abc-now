@@ -1,9 +1,11 @@
 .nav{
 	background-color:#d3badb!important; ;
 }
+
 body > section{
  background-image: image("images/chalk.jpg");
 	background-position: center;
+	background-repeat: no-repeat;
 	background-size: cover;
 }
 

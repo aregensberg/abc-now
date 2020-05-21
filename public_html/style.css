@@ -1,8 +1,9 @@
-/* global css*/
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@600&display=swap');
+
 .card-text{
 	font-family: "Comic Sans MS";
 }
-
 
 /* **********************************************************************/
 .container-fluid{
@@ -20,6 +21,13 @@ section.title {
 
 .jumbotron{
 	background-color: transparent;
+	font-family: "Cooper Black";
+	text-align: center;
+}
+
+h1{
+	padding-top: 1em;
+	padding-bottom: 1.5em;
 }
 
 body > main.container{

@@ -5,15 +5,22 @@
 
 
 /* **********************************************************************/
+.container-fluid{
+	padding-right: 0px;
+	padding-left: 0px;
+}
 
 .nav{
 	background-color:#d3badb!important;
 }
 section.title {
-	background: url(../public_html/images/chalk.jpg) no-repeat center;
+	background: no-repeat center/80% url(../public_html/images/chalk.jpg);
 	background-size: cover;
 }
 
+.jumbotron{
+	background-color: transparent;
+}
 
 body > main.container{
 	background-image: url(../public_html/images/chalkboard.jpg);

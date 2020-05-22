@@ -7,7 +7,6 @@
 
 /* **********************************************************************/
 
-
 .nav {
 	background-color: #d3badb !important;
 }
@@ -17,7 +16,7 @@ div.container-fluid {
 	padding-left: 0;
 }
 section.title {
-background: no-repeat center/80% url(../public_html/images/chalk.jpg);
+background: no-repeat center/60% url(../public_html/images/chalk.jpg);
 background-size: cover;
 }
 
@@ -31,9 +30,10 @@ text-align: center;
 background-color: #f5f5f566!important;
 }
 
-/*.main > div:nth-child(5) {
-	alignment: center;
-}*/
+.main > div:nth-child(5) {
+	align-content: center;
+	display: inline-flex;
+}
 
 h1{
 padding-top: 1em;
@@ -48,6 +48,10 @@ padding-bottom: 2rem;
 padding-top: 2rem;
 }
 
+.card-body{
+	margin-top: 1.5em;
+}
+
 .collapse{
 display: inline-block;
 }
@@ -60,6 +64,12 @@ text-align: left;
 
 label, input, textarea{
 display: block;
+}
+
+button, select {
+	text-transform: none;
+	border: solid black .15em;
+	margin-top: 1em;
 }
 
 footer{

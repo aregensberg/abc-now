@@ -36,8 +36,8 @@ $(document).ready(function() {
 				type: "POST",
 				url: $("#contact").attr("action"),
 				success: function (ajaxOutput) {
-					$("output-area").css("display", "")
-					$("output-area").html(ajaxOutput)
+					$("output-area").css("display", ""),
+					$("output-area").html(ajaxOutput);
 
 					if($(".alert-success").length >= 1) {
 				$("#contact")[0].reset()
@@ -46,4 +46,4 @@ $(document).ready(function() {
 			})
 		}
 	})
-})
+});

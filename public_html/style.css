@@ -39,13 +39,21 @@ h1{
 padding-top: 1em;
 padding-bottom: 1em;
 }
-
-body > main.container{
+body > main {
 background-image: url(../public_html/images/chalkboard.jpg);
 background-repeat: repeat;
 background-size: cover;
 padding-bottom: 2rem;
 padding-top: 2rem;
+}
+
+body > main > div:nth-child(1),
+body > main > div:nth-child(2),
+body > main > div:nth-child(3),
+body > main > div:nth-child(4),
+body > main > div:nth-child(5) {
+	padding-top: 1em;
+	padding-bottom: 1em;
 }
 
 .card-body{

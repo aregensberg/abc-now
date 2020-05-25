@@ -53,6 +53,53 @@ body > main > div:nth-child(5) {
 	margin: 1em;
 }
 
+body > main > div:nth-child(1) > div:nth-child(1) > div,
+body > main > div:nth-child(2) > div:nth-child(2) > div,
+body > main > div:nth-child(3) > div:nth-child(3) > div,
+body > main > div:nth-child(4) > div:nth-child(4) > div {
+	background-color: #ff7396;
+}
+
+body > main > div:nth-child(1) > div:nth-child(2) > div,
+body > main > div:nth-child(2) > div:nth-child(3) > div,
+body > main > div:nth-child(3) > div:nth-child(4) > div,
+body > main > div:nth-child(4) > div:nth-child(5) > div {
+	background-color: rgb(255, 46, 71);
+}
+
+body > main > div:nth-child(1) > div:nth-child(3) > div,
+body > main > div:nth-child(2) > div:nth-child(4) > div,
+body > main > div:nth-child(3) > div:nth-child(5) > div,
+body > main > div:nth-child(4) > div:nth-child(6) > div{
+	background-color: #ffb325;
+}
+
+body > main > div.d-flex.flex-sm-row.justify-content-center > div:nth-child(1) > div,
+body > main > div:nth-child(3) > div:nth-child(6) > div,
+body > main > div:nth-child(2) > div:nth-child(5) > div,
+body > main > div:nth-child(1) > div:nth-child(4) > div{
+	background-color: #fff665;
+}
+
+body > main > div:nth-child(1) > div:nth-child(5) > div,
+body > main > div:nth-child(2) > div:nth-child(6) > div,
+body > main > div:nth-child(4) > div:nth-child(1) > div,
+body > main > div.d-flex.flex-sm-row.justify-content-center > div:nth-child(2) > div{
+	background-color: #71cd66;
+}
+
+body > main > div:nth-child(1) > div:nth-child(6) > div,
+body > main > div:nth-child(3) > div:nth-child(1) > div,
+body > main > div:nth-child(4) > div:nth-child(2) > div{
+	background-color: #23caff;
+}
+
+body > main > div:nth-child(4) > div:nth-child(3) > div,
+body > main > div:nth-child(3) > div:nth-child(2) > div,
+body > main > div:nth-child(2) > div:nth-child(1) > div{
+	background-color: #784b80;
+}
+
 .card-body{
 	margin-top: 1.5em;
 	background-color: transparent;
@@ -61,6 +108,16 @@ body > main > div:nth-child(5) {
 
 .collapse{
 display: inline-block;
+}
+
+.btn-light {
+	color: #000000;
+	background-color: #f8f9fa;
+	border: 0;
+}
+
+.collapse > div > p {
+	font-size: larger;
 }
 
 form {

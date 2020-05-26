@@ -109,16 +109,22 @@ body > main > div:nth-child(2) > div:nth-child(1) > div{
 	background-color: transparent;
 	border: 0;
 }
+.card-text{
+	font-size: larger;
+}
 
 .collapse{
 display: inline-block;
 }
+
 
 .btn-light {
 	color: #000000;
 	background-color: #f8f9fa;
 	border: 0;
 }
+
+
 
 .collapse > div > p {
 	font-size: larger;

@@ -14,14 +14,14 @@ app.use(bodyParser.json())
 const indexRoute = express.Router()
 
 const requestValidation = [
-	check ( 'name', "A name is required to send an email").not().isEmpty().trim().escape(),
+	check ('name', "A name is required to send an email").not().isEmpty().trim().escape(),
 	check('email',"A valid email is required").isEmail().normalizeEmail(),
-	check ('message', 'A message is a required to send an email').not().isEmpty().trim().escape().isLength({max:2000})
+	check ('message', 'A message is a required to send an email').not().isEmpty().trim().escape().isLength({maxLenght:2000})
 ]
 
 indexRoute.route("/apis")
 	.get((request,response) => {
-		return response.send(Buffer.from(`<div class='alert alert-danger' role='alert'><strong>Oh snap!</strong> ${currentError.msg}</div>`))
+		return response.send(`status 200, success`)
 })
 	.post(requestValidation, (request, response) => {
 		response.append('Content-Type', 'text/html')
@@ -34,7 +34,7 @@ indexRoute.route("/apis")
 	const mailgunData = {
 		to: process.env.MAIL_RECIPIENT,
 		from: `Mailgun Sandbox <postmaster@${domain}>`,
-		subject: `${name} - ${email}: ${subject}`,
+		subject: `${name} - ${email}`,
 		text: message
 	}
 

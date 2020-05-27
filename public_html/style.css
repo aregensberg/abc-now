@@ -19,7 +19,7 @@ div.container-fluid {
 }
 
 section.title {
-background: no-repeat center/60% url(../public_html/images/chalk.jpg);
+background: no-repeat center right url(../public_html/images/chalk.jpg);
 background-size: cover;
 }
 
@@ -39,8 +39,7 @@ padding-bottom: 1em;
 }
 /* ABC Cards*/
 body > main {
-background-image: url(../public_html/images/chalkboard.jpg);
-background-repeat: repeat;
+background: no-repeat center right fixed url(../public_html/images/chalkboard.jpg);
 background-size: cover;
 padding-bottom: 2rem;
 padding-top: 2rem;
@@ -123,8 +122,6 @@ display: inline-block;
 	background-color: #f8f9fa;
 	border: 0;
 }
-
-
 
 .collapse > div > p {
 	font-size: larger;

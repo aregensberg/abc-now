@@ -16,18 +16,18 @@ const indexRoute = express.Router()
 const requestValidation = [
 	check ('name', "A name is required to send an email").not().isEmpty().trim().escape(),
 	check('email',"A valid email is required").isEmail().normalizeEmail(),
-	check ('message', 'A message is a required to send an email').not().isEmpty().trim().escape().isLength({maxLenght:2000})
+	check ('message', 'A message is a required to send an email').not().isEmpty().trim().escape().isLength({max:2000})
 ]
 
 indexRoute.route("/apis")
 	.get((request,response) => {
-		return response.send(`status 200, success`)
+		return response.json({status:200})
 })
 	.post(requestValidation, (request, response) => {
 		response.append('Content-Type', 'text/html')
 		response.append('Access-Control-Allow-Origin', ['*'])
 		const domain = process.env.MAILGUN_DOMAIN
-		const mg = mailgun({apiKey: process.env.MAILGUN_API_KEY, domain: domian});
+		const mg = mailgun({apiKey: process.env.MAILGUN_API_KEY, domain: domain});
 
 	const {name, email, message} = request.body
 
@@ -52,7 +52,7 @@ indexRoute.route("/apis")
 		return response.json('bad request: ${currentError.msg}')
 	}
 
-	return response.send(Buffer.from("div class ='alert alert-success' role='alert'>Email successfully sent.</div>"))
+	return response.send(Buffer.from("<div class ='alert alert-success' role='alert'>Email successfully sent.</div>"))
 })
 
 app.use(indexRoute)

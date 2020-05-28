@@ -15,7 +15,7 @@ $(document).ready(function() {
 			},
 			message: {
 				required: true,
-				maxLength: 2000
+				maxlength: 2000
 			}
 		},
 		messages: {
@@ -28,16 +28,16 @@ $(document).ready(function() {
 			},
 			message: {
 				required: "Please write a message in the message field",
-				maxLength: "You've exceeded 2000 characters, please reduce your message"
+				maxlength: "You've exceeded 2000 characters, please reduce your message"
 			}
 		},
 		submitHandler: function (form) {
-			$("#contact").ajxSubmit({
+			$("#contact").ajaxSubmit({
 				type: "POST",
 				url: $("#contact").attr("action"),
 				success: function (ajaxOutput) {
-					$("output-area").css("display", ""),
-					$("output-area").html(ajaxOutput);
+					$("#output-area").css("display", "");
+					$("#output-area").html(ajaxOutput);
 
 					if($(".alert-success").length >= 1) {
 				$("#contact")[0].reset()
@@ -45,5 +45,5 @@ $(document).ready(function() {
 				}
 			})
 		}
-	})
+	});
 });

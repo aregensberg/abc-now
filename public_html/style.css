@@ -1,6 +1,7 @@
 /*Google Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@600&display=swap');
 
+/* global*/
 .card-text{
 	font-family: "Comic Sans MS";
 }
@@ -12,6 +13,10 @@ img{
 
 .nav {
 	padding: .75em;
+}
+
+.navbar{
+	padding: 0
 }
 
 .purple{
@@ -121,10 +126,6 @@ body > main > div:nth-child(2) > div:nth-child(1) > div{
 	font-size: larger;
 }
 
-.collapse{
-display: inline-block;
-}
-
 
 .btn-light {
 	color: #000000;
@@ -136,6 +137,7 @@ display: inline-block;
 	font-size: larger;
 }
 
+/* contact */
 body > div.container.flex-sm-wrap.p-4 > div > div:nth-child(2) > div > h3{
 	padding: 1.5em;
 }

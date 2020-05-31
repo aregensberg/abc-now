@@ -115,7 +115,6 @@ body > main > div:nth-child(2) > div:nth-child(1) > div{
 	background-color: rgba(177, 112, 198, 0.85);
 }
 
-
 .card-body{
 	margin-top: 1.5em;
 	padding: .5em;
@@ -153,11 +152,23 @@ body > div.row.row-cols-1.row-cols-md-3 > div:nth-child(3) > div {
 	border: 5px solid #d3badb;
 }
 
-
 /* contact */
-body > div.container.flex-sm-wrap.p-4 > div > div:nth-child(2) > div > h3{
-	padding: 1.5em;
+
+body > div.jumbotron-b.jumbotron-fluid.border {
+	color: rgb(0, 0, 0);
+	text-transform: uppercase;
+	border: 10px solid;
+	padding: 2rem;
+	background-color: #d3badb;
+	font-family: 'Chelsea Market', cursive;
+	text-align: center;
 }
+
+.border {
+	border: 100px solid #fefeff!important;
+}
+/*	font-weight: bold;*/
+
 
 form {
 display: inline-block;
@@ -174,8 +185,9 @@ display: block;
 
 button, select {
 	text-transform: none;
-	border: solid black .15em;
-	margin-top: 1em;
+	border: solid rgba(255, 239, 213, 0) .15em;
+	margin-top: .50em;
+	font-family: "Comic Sans MS", sans-serif;
 }
 
 footer{
@@ -185,4 +197,5 @@ color: #000000;
 
 h4{
 text-align: center;
+	font-family: 'Chelsea Market', cursive;
 }

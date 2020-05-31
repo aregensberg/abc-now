@@ -6,7 +6,8 @@
 	<title>ABC NOW</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
 	<!--google fonts-->
-
+	<link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Merriweather+Sans&display=swap" rel="stylesheet">
 	<!--custom css-->
 	<link href="style.css" rel="stylesheet" type="text/css"/>
 
@@ -34,7 +35,7 @@
 <section class="title">
 	<div class="jumbotron">
 			<h1 class="display-3">ABC NOW</h1>
-			<p class="lead">ABC NOW was created to help children learn the alphabet and start associating words and images together. This site will help build muscle memory by using repetition and fun daily activities for your child.<br> Let’s learn the ABC’S!</p>
+			<p class="lead">ABC NOW was started to help children learn the alphabet and start associating words with images. Simply built with toddlers in mind, let your child click each letter of the alphabet to reveal a word and image. You can focus on one letter at a time while building memory by repetition and using the fun activities included. Let’s learn the ABC’S!</p>
 	</div>
 </section>
 
@@ -416,45 +417,59 @@
 	</div>
 </main>
 
-<!-- Activities--><!--contact-->
-<div class="container flex-sm-wrap p-4">
-	<div class="row justify-content-sm-around p-4 m-4">
-		<div class="col-sm-6">
-			<div class="card border border-dark">
-				<div class="card-body">
-					<h3 class="card-title text-center">Activities</h3>
-					<ul class="card-text p-2">
-						<li><strong>Sing:</strong> Simple enough, integrate the alphabet into a song. You can sing A-Z in different melodies and pronounce each letter strongly. Singing can be built into an existing routine like nap/bedtime, or even outside play (my daughter was especially fond of reciting the alphabet while jumping around and while relaxing in her swing). Once that becomes repetitive you can sing a letter and word together, for example “A is for apple so tasty to eat” and continue through the alphabet. </li>
-						<li><strong>Magnets:</strong>Using your refrigerator / dishwasher invest in some alphabet and image magnets. You can set up the alphabet and then ask your child to find the image magnet that starts with a specific letter. You can also flip this activity around and choose an image magnet, talk to your child about the image and then ask them to find the letter magnet. </li>
-						<li><strong>Flash cards:</strong>You can find Preschool flashcards at most retailers and they will come with letters and image/words. Using these in alphabetical order to start with for a few trial runs and then switching up the letter order will help your child build off of the memorization they have already learned.</li>
-					</ul>
-				</div>
+<!-- Activities-->
+<div class="container">Activities</div>
+<div class="row row-cols-1 row-cols-md-3">
+	<div class="col mb-4">
+		<div class="card h-100">
+			<img src="images/microphone.jpg" class="card-img-top" alt="Microphone">
+			<div class="card-body">
+				<h4 class="card-title">Sing</h4>
+				<p class="card-text">Have fun with it! You can sing A-Z in different melodies and pronounce each letter strongly. Singing can be built into an existing routine like nap/bedtime, or even outside play (my daughter was especially fond of reciting the alphabet while jumping around and while relaxing in her swing). Once that becomes repetitive you can start singing a letter and word together, for example “A is for apple so tasty to eat” and continue through the alphabet.</p>
 			</div>
 		</div>
-		<div class="col-sm-6">
-			<div class="card border border-dark form-wrapper">
-				<h3 class="card-title text-center">Contact</h3>
-				<form action="http://localhost:4200/apis" id="contact" method="post">
-					<div>
-						<label for="name">Name</label>
-						<input type="text" name="name" id="name"/>
-					</div>
-					<div>
-						<label for="email">Email</label>
-						<input type="email" name="email" id="email"/>
-					</div>
-					<div>
-						<label for="message">Message</label>
-						<textarea name="message" id="message" cols="30" rows="10" maxlength="2000" placeholder="2000 characters max"></textarea>
-					</div>
-					<button type="submit">Send!</button>
-					<button type="reset">Reset!</button>
-				</form>
-				<div id="output-area"></div>
+	</div>
+	<div class="col mb-4">
+		<div class="card h-100">
+			<img src="images/magnets.jpg" class="card-img-top" alt="Magnets on Refrigerator">
+			<div class="card-body">
+				<h4 class="card-title">Magnets</h4>
+				<p class="card-text">What toddler doesn’t love magnets? Using your refrigerator / dishwasher or anything else metal invest in a pack of alphabet and image magnets. You can set up the alphabet and then ask your child to find the image magnet that starts with a specific letter. You can also flip this activity around and choose an image magnet, talk to your child about that image and then ask them to find the letter that the image magnet starts with. </p>
+			</div>
+		</div>
+	</div>
+	<div class="col mb-4">
+		<div class="card h-100">
+			<img src="images/flashcards.jpg" class="card-img-top" alt="Example Flashcards">
+			<div class="card-body">
+				<h4 class="card-title">Flash Cards</h4>
+				<p class="card-text">You can find Preschool flashcards at most retailers and they will come with letters, images, and words. Using these in alphabetical order to start with for a few trial runs and then switching up the letter order will help your child build off the memorization they have already learned.</p>
 			</div>
 		</div>
 	</div>
 </div>
+
+<!--contact-->
+<div class="jumbotron jumbotron-fluid border border-dark">
+	<form action="http://localhost:4200/apis" id="contact" method="post">
+		<div>
+			<label for="name">Name</label>
+			<input type="text" name="name" id="name"/>
+		</div>
+		<div>
+			<label for="email">Email</label>
+			<input type="email" name="email" id="email"/>
+		</div>
+		<div>
+			<label for="message">Message</label>
+			<textarea name="message" id="message" cols="30" rows="10" maxlength="2000" placeholder="2000 characters max"></textarea>
+		</div>
+		<button type="submit">Send!</button>
+		<button type="reset">Reset!</button>
+	</form>
+<div id="output-area"></div>
+</div>
+
 
 <!--footer-->
 	<div>

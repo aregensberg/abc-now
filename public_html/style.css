@@ -3,7 +3,7 @@
 
 /* global*/
 .card-text{
-	font-family: "Comic Sans MS";
+	font-family: "Comic Sans MS", sans-serif;
 }
 
 img{
@@ -37,12 +37,13 @@ background-size: cover;
 
 .jumbotron{
 background-color: transparent;
-font-family: "Cooper Black";
+	font-family: 'Chelsea Market', cursive;
 text-align: center;
 }
 
 .lead{
 background-color: #f5f5f566!important;
+	font-family: "Comic Sans MS", sans-serif;
 }
 
 h1{
@@ -137,6 +138,22 @@ body > main > div:nth-child(2) > div:nth-child(1) > div{
 	font-size: larger;
 }
 
+/* activities */
+body > div.container {
+	padding: 1em;
+	text-align: center;
+	font-size: xx-large;
+	font-family: 'Chelsea Market', cursive;
+}
+
+body > div.row.row-cols-1.row-cols-md-3 > div:nth-child(1) > div,
+body > div.row.row-cols-1.row-cols-md-3 > div:nth-child(2) > div,
+body > div.row.row-cols-1.row-cols-md-3 > div:nth-child(3) > div {
+	border-radius: .50rem;
+	border: 5px solid #d3badb;
+}
+
+
 /* contact */
 body > div.container.flex-sm-wrap.p-4 > div > div:nth-child(2) > div > h3{
 	padding: 1.5em;
@@ -145,11 +162,14 @@ body > div.container.flex-sm-wrap.p-4 > div > div:nth-child(2) > div > h3{
 form {
 display: inline-block;
 padding: 2em;
-text-align: left;
+text-align: center;
 }
+
 
 label, input, textarea{
 display: block;
+	text-align: left;
+	font-family: "Comic Sans MS", sans-serif;
 }
 
 button, select {

@@ -10,7 +10,7 @@ img{
 	width: 100%;
 }
 /* **********************************************************************/
-
+/* **NAV** */
 .nav {
 	padding: .75em;
 }
@@ -50,7 +50,9 @@ h1{
 padding-top: 1em;
 padding-bottom: 1em;
 }
-/* ABC Cards*/
+
+/* ***ABC CARDS*** */
+
 body > main {
 background: url(../public_html/images/chalkboard.jpg) no-repeat center right fixed;
 background-size: cover;
@@ -126,7 +128,6 @@ body > main > div:nth-child(2) > div:nth-child(1) > div{
 	font-size: larger;
 }
 
-
 .btn-light {
 	color: #000000;
 	background-color: #f8f9fa;
@@ -137,7 +138,8 @@ body > main > div:nth-child(2) > div:nth-child(1) > div{
 	font-size: larger;
 }
 
-/* activities */
+/* ***ACTIVITIES*** */
+
 body > div.container {
 	padding: 1em;
 	text-align: center;
@@ -152,7 +154,7 @@ body > div.row.row-cols-1.row-cols-md-3 > div:nth-child(3) > div {
 	border: 5px solid #d3badb;
 }
 
-/* contact */
+/* ***CONTACTS*** */
 
 body > div.jumbotron-b.jumbotron-fluid.border {
 	color: rgb(0, 0, 0);
@@ -167,8 +169,6 @@ body > div.jumbotron-b.jumbotron-fluid.border {
 .border {
 	border: 100px solid #fefeff!important;
 }
-/*	font-weight: bold;*/
-
 
 form {
 display: inline-block;
@@ -176,11 +176,17 @@ padding: 2em;
 text-align: center;
 }
 
+label {
+	display: inline-block;
+	margin-bottom: .25rem;
+	margin-top: 1em;
+}
 
 label, input, textarea{
 display: block;
 	text-align: left;
 	font-family: "Comic Sans MS", sans-serif;
+	width: 100%;
 }
 
 button, select {
@@ -188,8 +194,10 @@ button, select {
 	border: solid rgba(255, 239, 213, 0) .15em;
 	margin-top: .50em;
 	font-family: "Comic Sans MS", sans-serif;
+	background-color: #fefeff;
 }
 
+/* ***FOOTER*** */
 footer{
 background-color: #d3badb!important;
 color: #000000;

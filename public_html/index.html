@@ -451,8 +451,8 @@
 <!--contact-->
 <div id="contactMe">
 <div class="jumbotron-b jumbotron-fluid border">
-	<form action="http://localhost:4200/apis" id="contact" method="post">
-		<div>
+	<form action="./apis/" id="contact" method="post" novalidate>
+		<div class="form-group">
 			<label for="name">Name</label>
 			<input type="text" name="name" id="name"/>
 		</div>
@@ -464,13 +464,13 @@
 			<label for="message">Message</label>
 			<textarea name="message" id="message" cols="30" rows="10" maxlength="2000" placeholder="2000 characters max"></textarea>
 		</div>
+		<div class="g-recaptcha" data-sitekey="6Lctwv8UAAAAAGGh3jHo_ad-IHR6VjwvykzSfnFN"></div>
 		<button type="submit">Send!</button>
 		<button type="reset">Reset!</button>
 	</form>
 <div id="output-area"></div>
 </div>
 </div>
-
 
 <!--footer-->
 	<div>
@@ -492,6 +492,8 @@
 <script crossorigin="anonymous" integrity="sha256-F6h55Qw6sweK+t7SiOJX+2bpSAa3b/fnlrVCJvmEj1A=" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
 <script crossorigin="anonymous" integrity="sha256-0Yg/eibVdKyxkuVo1Qwh0DspoUCHvSbm/oOoYVz32BQ=" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
 
+<!-- reCaptcha-->
+<script src='https://www.google.com/recaptcha/api.js'></script>
 <script src="script.js"> </script>
 
 </body>

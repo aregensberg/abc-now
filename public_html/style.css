@@ -164,6 +164,7 @@ body > div:nth-child(5) > div > div:nth-child(3){
 
 #contactMe{
 	font-size: xx-large;
+	padding: 0;
 }
 
 body > div.jumbotron-b.jumbotron-fluid.border{
@@ -177,15 +178,13 @@ body > div.jumbotron-b.jumbotron-fluid.border{
 }
 
 .border {
-	border: 100px solid #fefeff!important;
+	border: 50px solid #fefeff!important;
 }
-
 
 form {
 	display: inline-block;
 	text-align: center;
 }
-
 
 label, input, textarea{
 display: block;

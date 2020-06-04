@@ -34,7 +34,7 @@ div.container-fluid {
 /* ***Welcome*** */
 
 section {
-background: url("../public_html/images/chalk.jpg") no-repeat center/80%;
+background: url("https://images.unsplash.com/photo-1587586062323-836089e60d52?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80") no-repeat center/80%;
 background-size: cover;
 }
 
@@ -52,7 +52,7 @@ background-color: #f5f5f566!important;
 /* ***ABC CARDS*** */
 
 body > main {
-background: url(../public_html/images/chalkboard.jpg) no-repeat center right fixed;
+background:  url("https://images.unsplash.com/photo-1545199040-e144651a428d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80") no-repeat center right fixed;;
 background-size: cover;
 padding-bottom: 2rem;
 padding-top: 2rem;

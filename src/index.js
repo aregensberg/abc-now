@@ -45,16 +45,16 @@ indexRoute.route('/apis')
 		to: process.env.MAIL_RECIPIENT,
 		from: `Mailgun Sandbox <postmaster@${domain}>`,
 		subject: `${name} - ${email}`,
-		text: message
+		text: `${message}`
 	}
 
 	mg.messages().send(mailgunData, (error) => {
 		if (error) {
 			return response.send(Buffer.from(`<div class='alert alert-danger' role='alert'><strong>Try Again!</strong> Unable to send email, error with email sender</div>`))
 		}
+		return response.send(Buffer.from("<div class ='alert alert-success' role='alert'>Email successfully sent.</div>"))
 	})
 
-	return response.send(Buffer.from("<div class ='alert alert-success' role='alert'>Email successfully sent.</div>"))
 })
 
 app.use(indexRoute)

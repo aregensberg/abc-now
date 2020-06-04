@@ -65,9 +65,9 @@ body > main > div:nth-child(2),
 body > main > div:nth-child(3),
 body > main > div:nth-child(4),
 body > main > div:nth-child(5) {
-	padding-top: 1em;
-	padding-bottom: 1em;
-	margin: 1em;
+	/*padding-top: 1em;*/
+	/*padding-bottom: 1em;*/
+	/*margin: 1em;*/
 }
 
 body > main > div:nth-child(1) > div:nth-child(1) > div,

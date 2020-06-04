@@ -11,7 +11,7 @@ app.use(morgan('dev'))
 app.use(bodyParser.urlencoded({extended:false}))
 app.use(bodyParser.json())
 
-const recaptcha = new Recaptcha(process.env.RCAPTCHA_SITE_KEY, process.env.RECAPTCHA_SECRET_KEY)
+const recaptcha = new Recaptcha(process.env.RECAPTCHA_SITE_KEY, process.env.RECAPTCHA_SECRET_KEY)
 const indexRoute = express.Router()
 
 const requestValidation = [

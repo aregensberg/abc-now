@@ -421,7 +421,7 @@
 <div class="container">
 	<div class="row row-cols-1 row-cols-md-3">
 		<div class="col mb-4">
-			<div class="card h-100">
+			<div class="card h-100 border-0">
 				<img src="images/microphone.jpg" class="card-img-top" alt="Microphone">
 				<div class="card-body">
 					<h4 class="card-title">Sing</h4>
@@ -430,7 +430,7 @@
 			</div>
 		</div>
 		<div class="col mb-4">
-			<div class="card h-100">
+			<div class="card h-100 border-0">
 				<img src="images/magnets.jpg" class="card-img-top" alt="Magnets on Refrigerator">
 				<div class="card-body">
 					<h4 class="card-title">Magnets</h4>
@@ -439,7 +439,7 @@
 			</div>
 		</div>
 		<div class="col mb-4">
-			<div class="card h-100">
+			<div class="card h-100 border-0">
 				<img src="images/flashcards.jpg" class="card-img-top" alt="Example Flashcards">
 				<div class="card-body">
 					<h4 class="card-title">Flash Cards</h4>
@@ -451,13 +451,13 @@
 </div>
 
 <!--contact-->
-<div id="contactMe">
+
+<div id="contactMe" class="container">Contact</div>
 <div class="jumbotron-b jumbotron-fluid border">
 	<form action="./apis/" id="contact" method="post" novalidate>
 		<div class="form-group">
 			<label for="name">Name</label>
 			<input type="text" name="name" id="name"/>
-		</div>
 		<div>
 			<label for="email">Email</label>
 			<input type="email" name="email" id="email"/>
@@ -470,8 +470,8 @@
 		<button type="submit">Send!</button>
 		<button type="reset">Reset!</button>
 	</form>
-<div id="output-area"></div>
 </div>
+<div id="output-area"></div>
 </div>
 
 <!--footer-->

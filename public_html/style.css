@@ -29,9 +29,10 @@ div.container-fluid {
 	padding-right: 0;
 	padding-left: 0;
 }
+/* ***Welcome*** */
 
-section.title {
-background:  url(../public_html/images/chalk.jpg) no-repeat center/80%;
+section {
+background: url("../public_html/images/chalk.jpg") no-repeat center/80%;
 background-size: cover;
 }
 
@@ -141,24 +142,31 @@ body > main > div:nth-child(2) > div:nth-child(1) > div{
 
 /* ***ACTIVITIES*** */
 
+#activities{
+	font-size: xx-large;
+}
+
 body > div.container {
 	padding: 1em;
 	text-align: center;
-	font-size: xx-large;
 	font-family: 'Chelsea Market', cursive;
 }
 
-body > div.row.row-cols-1.row-cols-md-3 > div:nth-child(1) > div,
-body > div.row.row-cols-1.row-cols-md-3 > div:nth-child(2) > div,
-body > div.row.row-cols-1.row-cols-md-3 > div:nth-child(3) > div {
-	border-radius: .50rem;
+/* col mb-4's */
+body > div:nth-child(5) > div > div:nth-child(1),
+body > div:nth-child(5) > div > div:nth-child(2),
+body > div:nth-child(5) > div > div:nth-child(3){
+	border-radius: 1.25rem;
 	border: 5px solid #d3badb;
 }
 
 /* ***CONTACTS*** */
 
+#contactMe{
+	font-size: xx-large;
+}
 
-#contactMe > div{
+body > div.jumbotron-b.jumbotron-fluid.border{
 	color: rgb(0, 0, 0)!important;
 	text-transform: uppercase;
 	border: 10px solid;
@@ -172,23 +180,19 @@ body > div.row.row-cols-1.row-cols-md-3 > div:nth-child(3) > div {
 	border: 100px solid #fefeff!important;
 }
 
+
 form {
 	display: inline-block;
-	padding: 2em;
 	text-align: center;
 }
 
-label {
-	display: inline-block;
-	margin-bottom: .25rem;
-	margin-top: 1em;
-}
 
 label, input, textarea{
 display: block;
 	text-align: left;
 	font-family: "Comic Sans MS", sans-serif;
 	width: 100%;
+	padding-top: .50em;
 }
 
 button, select {
@@ -197,6 +201,11 @@ button, select {
 	margin-top: .50em;
 	font-family: "Comic Sans MS", sans-serif;
 	background-color: #fefeff;
+}
+
+#contact > div > div.g-recaptcha{
+	padding-top: .50em;
+	padding-bottom: .50em;
 }
 
 /* ***FOOTER*** */

@@ -45,8 +45,12 @@ text-align: center;
 }
 
 .lead{
-background-color: #f5f5f566!important;
+background-color: #c7dbba54!important;
 	font-family: "Comic Sans MS", sans-serif;
+}
+
+body > section > div > p{
+	margin: auto;
 }
 
 /* ***ABC CARDS*** */

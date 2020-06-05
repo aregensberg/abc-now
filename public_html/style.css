@@ -33,15 +33,16 @@ div.container-fluid {
 
 /* ***Welcome*** */
 
-section {
-background: url("https://images.unsplash.com/photo-1587586062323-836089e60d52?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80") no-repeat center/80%;
+body > section {
+background: url("https://images.unsplash.com/photo-1587586062323-836089e60d52?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80") no-repeat center;
 background-size: cover;
 }
 
 .jumbotron{
-background-color: transparent;
+	background-color: transparent;
 	font-family: 'Chelsea Market', cursive;
-text-align: center;
+	text-align: center;
+	margin: 0;
 }
 
 .lead{
@@ -56,7 +57,7 @@ body > section > div > p{
 /* ***ABC CARDS*** */
 
 body > main {
-background:  url("https://images.unsplash.com/photo-1545199040-e144651a428d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80") no-repeat center right fixed;;
+background:  url("https://images.unsplash.com/photo-1545199040-e144651a428d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80") no-repeat center right fixed;
 background-size: cover;
 padding-bottom: 2rem;
 padding-top: 2rem;
@@ -137,12 +138,17 @@ body > main > div:nth-child(2) > div:nth-child(1) > div{
 }
 
 body > div.container {
-	padding: 1em;
+	padding: .50em;
 	text-align: center;
 	font-family: 'Chelsea Market', cursive;
 }
 
-/* col mb-4's */
+body > div:nth-child(5) > div {
+	background-color: #d3badb;
+	padding-top: 1.5em;
+}
+
+        /* col mb-4's */
 body > div:nth-child(5) > div > div:nth-child(1),
 body > div:nth-child(5) > div > div:nth-child(2),
 body > div:nth-child(5) > div > div:nth-child(3){
@@ -154,21 +160,26 @@ body > div:nth-child(5) > div > div:nth-child(3){
 
 #contactMe{
 	font-size: xx-large;
-	padding: 0;
 }
 
-body > div.jumbotron-b.jumbotron-fluid.border{
-	color: rgb(0, 0, 0)!important;
-	text-transform: uppercase;
-	border: 10px solid;
-	padding: 2rem;
+body > div:nth-child(7){
+background: url("https://images.unsplash.com/photo-1587586291914-bdbe84ec1416?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80") no-repeat center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+body > div:nth-child(7) > div{
+	display: flex;
+	align-content: center;
+	flex-direction: column;
+	min-width: 0;
 	background-color: #d3badb;
-	font-family: 'Chelsea Market', cursive;
-	text-align: center;
-}
-
-.border {
-	border: 50px solid #fefeff!important;
+	background-clip: border-box;
+	border: 1px solid rgba(0,0,0,.125);
+	border-radius: .25rem;
+	margin: auto;
 }
 
 form {
@@ -186,10 +197,10 @@ display: block;
 
 button, select {
 	text-transform: none;
-	border: solid rgba(255, 239, 213, 0) .15em;
+	border: solid rgba(249, 248, 247, 0.65) .15em;
 	margin-top: .50em;
 	font-family: "Comic Sans MS", sans-serif;
-	background-color: #fefeff;
+	background-color: #d3badb;
 }
 
 #contact > div > div.g-recaptcha{

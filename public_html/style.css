@@ -45,6 +45,10 @@ background-size: cover;
 	margin: 0;
 }
 
+body > section > div > h1{
+	text-shadow: 3px 3px #c870ec;
+}
+
 .lead{
 background-color: #c7dbba54!important;
 	font-family: "Comic Sans MS", sans-serif;
